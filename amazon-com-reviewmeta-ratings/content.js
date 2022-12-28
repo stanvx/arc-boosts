@@ -18,7 +18,7 @@ if (element) {
   const asin = asinMatch ? asinMatch[1] : "";
   
   // Fetch the ReviewMeta rating using the ASIN
-  fetch(`https://reviewmeta.com/api/amazon-au/${asin}`)
+  fetch(`https://reviewmeta.com/api/amazon/${asin}`)
     .then(response => response.json())
     .then(data => {
       // Check if the rating is available
@@ -51,7 +51,7 @@ if (element) {
       } else {
         // Create the Fakespot link element
         const link = document.createElement("a");
-        link.href = `https://reviewmeta.com/amazon-au/${asin}`;
+        link.href = `https://reviewmeta.com/amazon/${asin}`;
         link.target = "_blank";  // This will open the link in a new window
         link.innerHTML = "Analyse on ReviewMeta";
   

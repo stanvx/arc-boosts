@@ -8,6 +8,7 @@ if (!element) {
 
 // Check if the element was found
 if (element) {
+
   // Create a break element
   const breakElement = document.createElement("br");
 
@@ -23,7 +24,7 @@ if (element) {
   const asin = asinMatch ? asinMatch[1] : "";
 
   // Set the src of the image using the extracted ASIN
-  img.src = `https://graph.keepa.com/pricehistory.png?asin=${asin}&domain=com`;
+  img.src = `https://charts.camelcamelcamel.com/au/${asin}/amazon.png?force=1&zero=0&w=330&h=396&desired=false&legend=0&ilt=1&tp=all&fo=0&lang=en`;
 
   // Add a mouseover event listener to the image
   img.addEventListener("mouseover", () => {
@@ -34,7 +35,7 @@ if (element) {
   // Add a click event listener to the image
   img.addEventListener("click", () => {
     // Open the URL using the extracted ASIN
-    window.open(`https://keepa.com/#!product/1-${asin}`, "_blank");
+    window.open(`https://au.camelcamelcamel.com/product/${asin}`, "_blank");
   });
 
   // Add the image as a child of the element
