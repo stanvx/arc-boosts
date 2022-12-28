@@ -24,7 +24,7 @@ if (element) {
   const asin = asinMatch ? asinMatch[1] : "";
 
   // Set the src of the image using the extracted ASIN
-  img.src = `https://charts.camelcamelcamel.com/au/${asin}/amazon.png?force=1&zero=0&w=330&h=396&desired=false&legend=0&ilt=1&tp=all&fo=0&lang=en`;
+  img.src = `https://charts.camelcamelcamel.com/au/${asin}/amazon-new.png?force=1&zero=0&w=330&h=330&desired=false&legend=0&ilt=1&tp=all&fo=0&lang=en`;
 
   // Add a mouseover event listener to the image
   img.addEventListener("mouseover", () => {
